@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #dedede;
+}
+
+body{
+    background-image: url("fundodetela.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    font-family: "Jua", serif;
+}
+
+.tituloinicial{
+    color: #7ed957;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    font-size: 120px;
+}
