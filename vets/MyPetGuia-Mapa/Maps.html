@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPetGuia-Mapa</title>
+    <link rel="stylesheet" href="Maps.css">
+    <script src="https://kit.fontawesome.com/31ece1b6a9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <!---->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <!---->
+
+    <div class="sidenav">
+        <header>
+            <!---->
+            <div class="close-bnt">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <!---->
+            <a href="/vets/cadastrofinal.html" class="logo">
+                <img src="patahome.png" alt="logo my petguia">
+            </a>
+            <!---->
+            <p>Filtros</p>
+        </header>
+        <!---->
+        <div class="menu">
+            <div class="item"><a class="sub-btn"><i class="fas fa-dog"></i>Animais
+            <i class="fas fa-angle-right dropdown"></i>
+            </a>
+            <div class="sub-menu">
+                <a href="" class="sub-item">Grande Porte <input type="checkbox" class="filtroPorte" value="G"></a>
+                <a href="" class="sub-item">Pequeno Porte <input type="checkbox" class="filtroPorte" value="PQ"></a>
+            </div>
+            </div>
+            <div class="item"><a class="sub-btn"><i class="fas fa-store"></i>locais
+            <i class="fas fa-angle-right dropdown"></i>
+            </a>
+            <div class="sub-menu">
+                <a href=" " class="sub-item">Veterinário <input type="checkbox" class="filtroLocal" value="V"></a>
+                <a href="" class="sub-item">Petshop <input type="checkbox" class="filtroLocal" value="PT"></a>
+            </div>
+            </div>
+        </div>
+        <footer>
+          
+        </footer>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.menu-btn').click(function(){
+                $('.sidenav').addClass('active');
+                $('.menu-btn').css("visibility", "hidden");
+            });
+            $('.close-bnt').click(function(){
+                $('.sidenav').removeClass('active');
+                $('.menu-btn').css("visibility", "visible");
+            });
+
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+        })
+    </script>
+
+ <div id="map"></div>
+ <script>
+    $(function() {
+      
+      var map = L.map('map').setView([-25.4284, -49.2733], 12);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; OpenStreetMap contributors'
+      }).addTo(map);
+
+     
+      var markersData = [
+        { id: 1, lat: -25.414416241690784, lng: -49.2483613742793, title: "Hospital Veterinário UFPR", categories: {a: 'G', b: 'V'} },
+        { id: 2, lat: -25.422076113399154, lng: -49.21705513470646, title: "Jockey Farmácia Veterinária", categories: {a: 'G', b: 'PT'} },
+        { id: 3, lat: -25.39665766215366, lng: -49.24855114232841, title: "Clinivet - Hospital Veterinário", categories: {a: 'PQ', b: 'V'} },
+        { id: 4, lat: -25.382169908921068, lng: -49.25781453285722, title: "XicoPets", categories: {a: 'PQ', b: 'PT'} },
+      ];
+
+      // Armazena marcadores Leaflet
+      var leafletMarkers = {};
+
+      
+      function updateMarkers() {
+       
+        var selectedPorte = $('.filtroPorte:checked').map(function() { return this.value; }).get();
+        var selectedLocal = $('.filtroLocal:checked').map(function() { return this.value; }).get();
+
+       
+        Object.values(leafletMarkers).forEach(m => map.removeLayer(m));
+        leafletMarkers = {};
+
+       
+        if (selectedPorte.length === 0 && selectedLocal.length === 0) return;
+
+        markersData.forEach(function(m) {
+          var matchPorte = selectedPorte.length === 0 ? true : (m.categories.a && selectedPorte.includes(m.categories.a));
+          var matchLocal = selectedLocal.length === 0 ? true : (m.categories.b && selectedLocal.includes(m.categories.b));
+
+          var showMarker;
+
+          if (selectedPorte.length > 0 && selectedLocal.length > 0) {
+            showMarker = matchPorte && matchLocal;
+          } else if (selectedPorte.length > 0) {
+            showMarker = matchPorte;
+          } else {
+            showMarker = matchLocal;
+          }
+
+          if (showMarker) {
+            var marker = L.marker([m.lat, m.lng]).addTo(map).bindPopup(m.title);
+            leafletMarkers[m.id] = marker;
+          }
+        });
+      }
+
+
+      
+      $('.filtroPorte, .filtroLocal').on('change', updateMarkers);
+
+     
+      updateMarkers();
+    });
+  </script>
+</body>
+</html>
