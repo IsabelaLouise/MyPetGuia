@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastrofinal.css" />
+</head>
+<body>
+    <header class="cabecalho">
+    <nav class="menu">
+            <div class="menu-coluna esquerda">
+                <a href="/PetseRaças(code)/petseracas.html">PETS E RAÇAS</a>
+                <a href="/vets/cadastrofinal.html">VETERINÁRIOS</a>
+            </div>
+            <div class="menu-coluna centro">
+                <a href="/home/index.html" class="logo">
+                    <img src="/home/imghome/patahome.png" alt="Logo lupa">
+                </a>
+            </div>
+            <div class="menu-coluna direita">
+                <a href="/perfil do pet/perfilpet1.html">MEU PET</a>
+                <a href="login.html">LOGIN</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="partefora">
+        <p class="titulo">Vamos criar o perfil do pet!</p>
+        <p class="etapa">Etapa 3 de 3</p>
+    </div>
+
+    <div class="container-azul2">
+        <img src="cachorro.png" class="petavatar2"/>
+        <label>Nome do pet: </label>
+        <textarea></textarea>
+        <p class="especie" id="campoEspecie">Espécie: </p>
+        <p class="raça" id="campoRaca">Raça: </p>
+
+    </div>
+
+    <div class="container-azul">
+        
+    <div class="card-pet">
+    <div class="card-header">
+        <img src="cachorro.png"  class="pet-avatar">
+        <span class="card-titulo">Seja bem vindo(a)!</span>
+        
+    </div>
+    <div class="seleçao">
+        <label>Este animal é:</label>
+        <label><input type="radio" name="tipo" checked> Meu</label>
+        <label><input type="radio" name="tipo"> Para adoção</label>
+        
+    </div>
+    <div class="info-idade-container">
+    <div class="informaçoes">
+        <label>Sexo:</label>
+        <textarea></textarea>
+    </div>
+
+    <div class="idade">
+    <label>Idade:</label>
+    <textarea></textarea>
+    </div>
+    </div>
+    <div class="medicas">
+        <label>Observações médicas:</label>
+            <textarea></textarea>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <button class="botaofinalizar">Finalizar cadastro</button>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const especie = localStorage.getItem('especieSelecionada');
+        const raca = localStorage.getItem('racaSelecionada');
+
+        if (especie) {
+            document.getElementById('campoEspecie').textContent = 'Espécie: ' + especie;
+        }
+
+        if (raca) {
+            document.getElementById('campoRaca').textContent = 'Raça: ' + raca;
+        }
+
+        
+        let imgSrc = '';
+        if (especie && raca) {
+            
+            imgSrc = especie.toLowerCase() + '_' + raca.toLowerCase().replace(/\s/g, '') + '.png';
+        } else if (especie) {
+            
+            imgSrc = especie.toLowerCase() + '.png';
+        } else {
+            imgSrc = 'cachorro.png'; 
+        }
+
+        
+        document.querySelectorAll('.petavatar2, .pet-avatar').forEach(img => {
+            img.src = imgSrc;
+        });
+    });
+</script>
+
+</body>
+</html>

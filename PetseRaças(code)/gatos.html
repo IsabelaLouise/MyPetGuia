@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBRAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="petseracas.css" />
+</head>
+
+  <body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <div class="menu-coluna esquerda">
+                <a href="/PetseRaças(code)/petseracas.html">PETS E RAÇAS</a>
+                <a href="/vets/cadastrofinal.html">VETERINÁRIOS</a>
+            </div>
+            <div class="menu-coluna centro">
+                <a href="/home/index.html" class="logo">
+                    <img src="Imagens/patahome.png" alt="Logo lupa">
+                </a>
+            </div>
+            <div class="menu-coluna direita">
+                <a href="/perfil do pet/perfilpet1.html">MEU PET</a>
+                <a href="login.html">LOGIN</a>
+            </div>
+        </nav>
+    </header>
+
+    <a href="javascript:history.back()" class="botao-voltar" title="Voltar">&#8592;</a>
+
+    <main>
+        <section class="animais">
+        <h1>Gatos</h1>
+        <div class="barra-pesquisa-container">
+                <img src="Imagens/patahome.png" class="icone-lupa" alt="Lupa">
+                <input type="text" placeholder="Qual raça deseja pesquisar sobre?" id="pesquisa" class="barra-pesquisa">
+            </div>
+        </section>
+            
+        <section class="container-verde">
+            <div class="animais-container">
+                <a href="persa.html" class="animal-card">
+                    <img src="imagens/persian.png" alt="Persa">
+                    <span class="nome-animal">Persa</span>
+                </a>
+                <a href="ragdoll.html" class="animal-card">
+                    <img src="imagens/ragdoll.jpg" alt="Ragdoll">
+                    <span class="nome-animal">Ragdoll</span>
+                </a>
+                <a href="siames.html" class="animal-card">
+                    <img src="imagens/siamese.png" alt="Siamês">
+                    <span class="nome-animal">Siamês</span>
+                </a>
+                <a class="animal-card">
+                    <img src="imagens/mainecoon.png" alt="Maine Coon">
+                    <span class="nome-animal">Maine Coon</span>
+                </a>
+                <a class="animal-card">
+                    <img src="imagens/scottishfold.png" alt="Scottish Fold">
+                    <span class="nome-animal">Scottish Fold</span>
+                </a>
+                <a class="animal-card">
+                    <img src="imagens/siberiano.png" alt="Siberiano">
+                    <span class="nome-animal">Siberiano</span>
+                </a>
+                <a class="animal-card">
+                    <img src="imagens/abissínio.png" alt="Abissínio">
+                    <span class="nome-animal">Abissínio</span>
+                </a>
+                <a class="animal-card">
+                    <img src="imagens/exotic.png" alt="Exótico">
+                    <span class="nome-animal">Exótico</span>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+  const input = document.getElementById('pesquisa');
+  const cards = document.querySelectorAll('.animal-card');
+
+  input.addEventListener('input', () => {
+    const valor = input.value.toLowerCase();
+
+    cards.forEach(card => {
+      const nome = card.querySelector('.nome-animal').textContent.toLowerCase();
+      const corresponde = nome.includes(valor);
+      card.style.display = corresponde ? 'inline-block' : 'none';
+    });
+  });
+</script>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinarios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastrofinal.css" />
+</head>
+<body>
+    <header class="cabecalho">
+      <nav class="menu">
+            <div class="menu-coluna esquerda">
+                <a href="/PetseRaças(code)/petseracas.html">PETS E RAÇAS</a>
+                <a href="/vets/cadastrofinal.html">VETERINÁRIOS</a>
+            </div>
+            <div class="menu-coluna centro">
+                <a href="/home/index.html" class="logo">
+                    <img src="/home/imghome/patahome.png" alt="Logo lupa">
+                </a>
+            </div>
+            <div class="menu-coluna direita">
+                <a href="/perfil do pet/perfilpet1.html">MEU PET</a>
+                <a href="login.html">LOGIN</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="partefora">
+        <p class="titulo">Veterinários</p>
+    </div>
+    <div class="link-mapa">
+        <a href="Maps.html">Gostaria de acessar o mapa? -></a>
+    </div>
+
+    <div class="barra-pesquisa-container">
+        <img src="/home/imghome/patahome.png" class="icone-lupa" alt="Lupa">
+        <input type="text" placeholder="Qual profissional você gostaria de achar?" id="pesquisa" class="barra-pesquisa">
+    </div>
+
+    <div class="cards-wrapper">
+        <p id="mensagem-nenhum-resultado" style="text-align:center; font-size:20px; display:none; color: red;">
+        Nenhum profissional encontrado.
+        </p>
+        <div class="container-azul abrir-modal" data-modal="modal1">
+            <div class="info-fora">
+                <div class="imagem-perfil">
+                    <img src="Carolina Menez.2.png">
+                </div>
+                <h3 class="nome-profissional">Carolina Menezes</h3>
+                <p> Clínica de Pequenos Animais</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="container-azul abrir-modal" data-modal="modal2">
+            <div class="info-fora">
+                <div class="imagem-perfil">
+                    <img src="Rafael Tavares.2.png">
+                </div>
+                <h3 class="nome-profissional">Rafael Tavares</h3>
+                <p>Ortopedia</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="container-azul abrir-modal" data-modal="modal3">
+            <div class="info-fora">
+                <div class="imagem-perfil">
+                    <img src="Aline Rocha.2.png">
+                </div>
+                <h3 class="nome-profissional">Aline Rocha</h3>
+                <p>Dermatologia</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="container-azul abrir-modal" data-modal="modal4">
+            <div class="info-fora">
+                <div class="imagem-perfil">
+                    <img src="Mracelo Borges.2.png">
+                </div>
+                <h3 class="nome-profissional">Marcelo Borges</h3>
+                <p>Medicina de Grandes Animais</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="container-azul abrir-modal" data-modal="modal5">
+            <div class="info-fora">
+                <div class="imagem-perfil">
+                    <img src="Henrique Vilela.2.png">
+                </div>
+                <h3 class="nome-profissional">Henrique Vilela</h3>
+                <p>Animais Silvestres e Exóticos</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="container-azul abrir-modal" data-modal="modal6">
+            <div class="info-fora">
+                <div class="imagem-perfil">
+                    <img src="Juliana Fontes.2.png">
+                </div>
+                <h3 class="nome-profissional">Juliana Fontes</h3>
+                <p> Medicina Veterinária Preventiva</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="container-azul abrir-modal" data-modal="modal7">
+            <div class="info-fora">
+                <div class="imagem-perfil">
+                    <img src="Lucas Amaral.2.png">
+                </div>
+                <h3 class="nome-profissional">Lucas Amaral</h3>
+                <p>Cirurgia Veterinária</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="container-azul abrir-modal" data-modal="modal8">
+            <div class="info-fora">
+                <div class="imagem-perfil">
+                    <img src="Beatriz Lima.2.png">
+                </div>
+                <h3 class="nome-profissional">Beatriz Lima</h3>
+                <p> Cardiologia</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+<!-- Modais -->
+
+    <div id="modal1" class="modal">
+        <div class="container-azul2">
+            <div class="info-fora2">
+                <div class="imagem-perfil2">
+                    <img src="Carolina Menezes.png">
+                </div>
+                <h3>Carolina Menezes</h3>
+                <p>Clínica de Pequenos Animais</p>
+                <div class="avaliacao-container" data-id="1">
+                    <div class="avaliacao">
+                        <span class="estrela" data-valor="5">&#9733;</span>
+                        <span class="estrela" data-valor="4">&#9733;</span>
+                        <span class="estrela" data-valor="3">&#9733;</span>
+                        <span class="estrela" data-valor="2">&#9733;</span>
+                        <span class="estrela" data-valor="1">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-direita">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="container-azul2">
+            <div class="info-fora2">
+                <div class="imagem-perfil2">
+                    <img src="Rafael Tavares.png" alt="">
+                </div>
+                <h3>Rafael Tavares</h3>
+                <p>Ortopedia</p>
+                 <div class="avaliacao-container" data-id="2">
+                    <div class="avaliacao">
+                        <span class="estrela" data-valor="5">&#9733;</span>
+                        <span class="estrela" data-valor="4">&#9733;</span>
+                        <span class="estrela" data-valor="3">&#9733;</span>
+                        <span class="estrela" data-valor="2">&#9733;</span>
+                        <span class="estrela" data-valor="1">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-direita">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="container-azul2">
+            <div class="info-fora2">
+                <div class="imagem-perfil2">
+                    <img src="Aline Rocha.png">
+                </div>
+                <h3>Aline Rocha</h3>
+                <p>Dermatologia</p>
+                 <div class="avaliacao-container" data-id="3">
+                    <div class="avaliacao">
+                        <span class="estrela" data-valor="5">&#9733;</span>
+                        <span class="estrela" data-valor="4">&#9733;</span>
+                        <span class="estrela" data-valor="3">&#9733;</span>
+                        <span class="estrela" data-valor="2">&#9733;</span>
+                        <span class="estrela" data-valor="1">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-direita">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="container-azul2">
+            <div class="info-fora2">
+                <div class="imagem-perfil2">
+                    <img src="Marcelo Borges.png">
+                </div>
+                <h3>Marcelo Borges</h3>
+                <p>Medicina de Grandes Animais</p>
+                 <div class="avaliacao-container" data-id="4">
+                    <div class="avaliacao">
+                        <span class="estrela" data-valor="5">&#9733;</span>
+                        <span class="estrela" data-valor="4">&#9733;</span>
+                        <span class="estrela" data-valor="3">&#9733;</span>
+                        <span class="estrela" data-valor="2">&#9733;</span>
+                        <span class="estrela" data-valor="1">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-direita">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="container-azul2">
+            <div class="info-fora2">
+                <div class="imagem-perfil2">
+                    <img src="Henrique Vilela.png">
+                </div>
+                <h3>Henrique Vilela</h3>
+                <p>Animais Silvestres e Exóticos</p>
+                 <div class="avaliacao-container" data-id="5">
+                    <div class="avaliacao">
+                        <span class="estrela" data-valor="5">&#9733;</span>
+                        <span class="estrela" data-valor="4">&#9733;</span>
+                        <span class="estrela" data-valor="3">&#9733;</span>
+                        <span class="estrela" data-valor="2">&#9733;</span>
+                        <span class="estrela" data-valor="1">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-direita">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="container-azul2">
+            <div class="info-fora2">
+                <div class="imagem-perfil2">
+                    <img src="Juliana Fontes.png">
+                </div>
+                <h3>Juliana Fontes</h3>
+                <p>Medicina Veterinária Preventiva</p>
+                 <div class="avaliacao-container" data-id="6">
+                    <div class="avaliacao">
+                        <span class="estrela" data-valor="5">&#9733;</span>
+                        <span class="estrela" data-valor="4">&#9733;</span>
+                        <span class="estrela" data-valor="3">&#9733;</span>
+                        <span class="estrela" data-valor="2">&#9733;</span>
+                        <span class="estrela" data-valor="1">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-direita">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="modal7" class="modal">
+        <div class="container-azul2">
+            <div class="info-fora2">
+                <div class="imagem-perfil2">
+                    <img src="Lucas Amaral.png">
+                </div>
+                <h3>Lucas Amaral</h3>
+                <p>Cirurgia Veterinária</p>
+                 <div class="avaliacao-container" data-id="7">
+                    <div class="avaliacao">
+                        <span class="estrela" data-valor="5">&#9733;</span>
+                        <span class="estrela" data-valor="4">&#9733;</span>
+                        <span class="estrela" data-valor="3">&#9733;</span>
+                        <span class="estrela" data-valor="2">&#9733;</span>
+                        <span class="estrela" data-valor="1">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-direita">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="modal8" class="modal">
+        <div class="container-azul2">
+           <div class="info-fora2">
+                <div class="imagem-perfil2">
+                    <img src="Beatriz Lima.png">
+                </div>
+                <h3>Beatriz Lima</h3>
+                <p> Cardiologia</p>
+                 <div class="avaliacao-container" data-id="8">
+                    <div class="avaliacao">
+                        <span class="estrela" data-valor="5">&#9733;</span>
+                        <span class="estrela" data-valor="4">&#9733;</span>
+                        <span class="estrela" data-valor="3">&#9733;</span>
+                        <span class="estrela" data-valor="2">&#9733;</span>
+                        <span class="estrela" data-valor="1">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-direita">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57677.586024315!2d-49.31192016875!3d-25.37637250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f6f806bd6f%3A0xf18ef88d9f58805!2zQ2zDrW5pY2EgVmV0ZXJpbsOhcmlhIENsaW5pY8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1749416686640!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class = "rodape">
+            <p class="direitos">© 2025 My Pet Guia<br></p>
+            <p class="nomes">Por Fernanda Pinho, Edoarda Cenci, Isabela Louise, Julia Molina e Julia Portela</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.abrir-modal').forEach(container => {
+            container.addEventListener('click', () => {
+                const modalId = container.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+                if (modal) modal.style.display = 'flex';
+            });
+        });
+
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+<script>
+  const input = document.getElementById('pesquisa');
+  const cards = document.querySelectorAll('.container-azul');
+  const mensagem = document.getElementById('mensagem-nenhum-resultado');
+
+  input.addEventListener('input', () => {
+    const valor = input.value.toLowerCase();
+    let algumVisivel = false;
+
+    cards.forEach(card => {
+      const nomeEl = card.querySelector('.nome-profissional');
+      const especialidadeEl = card.querySelector('p');
+
+      const nome = nomeEl ? nomeEl.textContent.toLowerCase() : '';
+      const especialidade = especialidadeEl ? especialidadeEl.textContent.toLowerCase() : '';
+
+      const corresponde = nome.includes(valor) || especialidade.includes(valor);
+      card.style.display = corresponde ? 'flex' : 'none';
+      if (corresponde) algumVisivel = true;
+    });
+
+    mensagem.style.display = algumVisivel ? 'none' : 'block';
+  });
+// ------
+   document.querySelectorAll('.avaliacao-container').forEach(container => {
+      const estrelas = container.querySelectorAll('.estrela');
+      const resultado = container.querySelector('.resultado');
+      let valorSelecionado = 0;
+
+      estrelas.forEach(estrela => {
+        estrela.addEventListener('click', () => {
+          valorSelecionado = parseInt(estrela.getAttribute('data-valor'));
+          atualizarEstrelas();
+          resultado.textContent = `Você avaliou com ${valorSelecionado} estrela${valorSelecionado > 1 ? 's' : ''}.`;
+        });
+
+        estrela.addEventListener('mouseover', () => {
+          const valorHover = parseInt(estrela.getAttribute('data-valor'));
+          atualizarEstrelas(valorHover);
+        });
+
+        estrela.addEventListener('mouseout', () => {
+          atualizarEstrelas();
+        });
+      });
+
+      function atualizarEstrelas(valorTemporario = valorSelecionado) {
+        estrelas.forEach(estrela => {
+          const valor = parseInt(estrela.getAttribute('data-valor'));
+          if (valor <= valorTemporario) {
+            estrela.classList.add('selecionada');
+          } else {
+            estrela.classList.remove('selecionada');
+          }
+        });
+      }
+    });
+</script>
+</html>

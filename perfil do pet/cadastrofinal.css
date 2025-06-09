@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(fundodetela.jpg);
+  background-size: 120vw 120vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'DynaPuff', serif;
+  margin-bottom: 55vh; 
+  overflow: hidden;
+}
+
+header.cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-bottom: 2px solid #dedede;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.menu-coluna {
+  display: flex;
+  gap: 150px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  color: #7ed957;
+  text-decoration: none;
+  white-space:nowrap;
+  font-size: 25px;
+}
+
+.menu .logo img {
+  height: 70px;
+}
+
+.partefora {
+  text-align: center;
+  margin-top: 140px; 
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+  padding: 0%;
+}
+
+.partefora .titulo {
+  font-size: 35px;
+  margin: 0;
+
+
+}
+
+.etapa {
+  font-size: 33px;
+  margin-top: 2px;
+  color: #5271ff;
+  padding: 1%;
+}
+.container-azul2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;   
+  align-items: center;
+  position: relative;
+  width: 20%;
+  height: 415px;
+  background-color: rgba(33, 155, 185, 0.237);
+  box-shadow: -4px -4px 8px rgb(199, 198, 198);
+  border-radius: 30px 30px 30px 30px;
+  top: 34%;
+  left: 15%;
+
+}
+
+.petavatar2 {
+  
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-top: -5%;
+  
+ 
+}
+
+.container-azul2 label {
+  font-weight: 500;
+  color: #222;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.container-azul2 textarea {
+  width: 80%;
+  min-height: 48px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  padding: 6px;
+  background: #92a8f3;
+  font-size: 20px;
+  margin-top: 2px;
+  color: #222;
+  outline: none;
+  text-align: center;
+  font-family: 'DynaPuff';
+  margin-top: 15px;
+  margin-bottom: 20px;
+  
+}
+
+.especie,
+.raça {
+  color: #fff;
+  font-weight: 250;
+  margin: 0;
+  background: #7d9cff;
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+}
+
+.especie {
+  margin-bottom: 17px;
+}
+
+
+
+
+.container-azul {
+  position: fixed;
+  width: 40%;
+  height: 50%;
+  background-color: rgba(40, 157, 184, 0.237);
+  box-shadow: -4px -4px 8px rgb(199, 198, 198);
+  border-radius: 30px 30px 30px 30px;
+  top: 34%;
+  left: 45%;
+}
+
+.card-pet {
+  
+  border-radius: 18px;
+  padding: 18px 18px 22px 18px;
+  width: 100%;
+  max-width: 650px;
+  margin: 10px auto;
+  position: relative;
+}
+
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  top: 100%;
+
+}
+
+.pet-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  
+}
+
+.card-titulo {
+  flex: 1;
+  font-size: 30px;
+  text-align: center;
+  color: #222;
+}
+
+.seleçao {
+  background: #7d9cff;
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.seleçao label {
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.seleçao input[type="radio"] {
+  accent-color: #7d9cff;
+  margin-right: 2px;
+}
+
+
+.medicas {
+  
+  border-radius: 8px;
+  padding: 7px 8px 4px 8px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.idade label,
+.informaçoes label,
+.medicas label {
+  font-weight: 500;
+  color: #222;
+  
+  font-size: 1;
+}
+
+
+.medicas textarea {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  padding: 6px;
+  background: #7d9cff;
+  font-family: inherit;
+  font-size: 1em;
+  margin-top: 2px;
+  color: #222;
+  outline: none;
+  text-align: center;
+}
+
+.botaofinalizar {
+  background: #5c73fc;
+  color: #fff;
+  font-family: 'DynaPuff', sans-serif;
+  font-size: 20px;
+  
+  border: none;
+  border-radius: 25px;
+  padding: 10px 32px;
+  cursor: pointer;
+  margin: 30px 1040px;
+  display: block;
+  box-shadow: 0 2px 8px #b6b6b6;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.botaofinalizar:hover {
+  background: #4051b5;
+}
+
+.info-idade-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.informaçoes,
+.idade {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.info-idade-container textarea {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  padding: 6px;
+  background: #7d9cff;
+  font-family: inherit;
+  font-size: 20px;
+  margin-top: 2px;
+  color: #222;
+  outline: none;
+  text-align: center;
+}

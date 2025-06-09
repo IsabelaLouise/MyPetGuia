@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(fundodetela.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'DynaPuff', serif;
+  margin-bottom: 55vh; 
+}
+
+header.cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-bottom: 2px solid #dedede;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.menu-coluna {
+  display: flex;
+  gap: 150px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  color: #7ed957;
+  text-decoration: none;
+  white-space:nowrap;
+  font-size: 25px;
+}
+
+.menu .logo img {
+  height: 70px;
+}
+
+.partefora {
+  text-align: center;
+  margin-top: 120px; 
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+  padding: 0%;
+}
+
+.partefora .titulo {
+  font-size: 35px;
+  margin: 0;
+
+
+}
+
+.etapa {
+  font-size: 33px;
+  margin-top: 5px;
+  color: #5271ff;
+  padding: 1%;
+}
+
+.container-verde {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55vh;
+  background-color: rgba(60, 167, 6, 0.237);
+  border-radius: 30px 30px 0 0;
+  text-align: center;
+  padding: 50px 0;
+  box-shadow: 0 -4px 8px rgb(199, 198, 198);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 20px; 
+
+}
+
+
+.container-verde .titulo {
+  margin-top: -20px; 
+  margin-bottom: 50px; 
+  color: #7ed957;
+  font-size: 30px; 
+}
+
+.imagens-pets {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pet-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; 
+}
+
+
+.pet-nome {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #050505; 
+  font-family: 'DynaPuff', serif;
+  text-align: center;
+}
+
+.imagens-pets img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: transform 1s ease;
+  
+}
+.pet-item:hover {
+    transform: scale(1.1);
+}
+.container-verde .maistarde{
+    margin-top: 50px; 
+  margin-bottom: 50px; 
+  display: block;
+  color: #5271ff;
+  font-size: 20px; 
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+}
+

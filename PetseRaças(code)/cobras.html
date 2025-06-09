@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBRAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="petseracas.css" />
+</head>
+
+  <body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <div class="menu-coluna esquerda">
+                <a href="/PetseRaças(code)/petseracas.html">PETS E RAÇAS</a>
+                <a href="/vets/cadastrofinal.html">VETERINÁRIOS</a>
+            </div>
+            <div class="menu-coluna centro">
+                <a href="/home/index.html" class="logo">
+                    <img src="Imagens/patahome.png" alt="Logo lupa">
+                </a>
+            </div>
+            <div class="menu-coluna direita">
+                <a href="/perfil do pet/perfilpet1.html">MEU PET</a>
+                <a href="login.html">LOGIN</a>
+            </div>
+        </nav>
+    </header>
+
+    <a href="javascript:history.back()" class="botao-voltar" title="Voltar">&#8592;</a>
+
+    <main>
+        <section class="animais">
+            <h1>Cobras</h1>
+            <div class="barra-pesquisa-container">
+                <img src="Imagens/patahome.png" class="icone-lupa" alt="Lupa">
+                <input type="text" placeholder="Qual espécie deseja pesquisar sobre?" id="pesquisa" class="barra-pesquisa">
+            </div>
+        </section>
+
+        <section class="container-verde">
+            <div class="animais-container">
+                <a href="cobradomilho.html" class="animal-card">
+                    <img src="imagens/corn snake.png" alt="Cobra do Milho">
+                    <span class="nome-animal">Cobra do Milho</span>
+                </a>
+                <a href="jiboia.html" class="animal-card">
+                    <img src="imagens/jiboia.png" alt="Jiboia">
+                    <span class="nome-animal">Jiboia</span>
+                </a>
+                <a href="pitonreal.html" class="animal-card">
+                    <img src="imagens/python.png" alt="Píton Real">
+                    <span class="nome-animal">Píton Real</span>
+                </a>
+                <a class="animal-card">
+                    <img src="imagens/arcoiris.png" alt="Jiboia Arco-Íris">
+                    <span class="nome-animal">Jiboia Arco-Íris</span>
+                </a>
+                <a class="animal-card">
+                    <img src="imagens/boarosada.png" alt="Boa Rosada">
+                    <span class="nome-animal">Boa Rosada</span>
+                </a>
+                <a class="animal-card">
+                    <img src="imagens/pitonbola.png" alt="Píton Bola">
+                    <span class="nome-animal">Píton Bola</span>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+  const input = document.getElementById('pesquisa');
+  const cards = document.querySelectorAll('.animal-card');
+
+  input.addEventListener('input', () => {
+    const valor = input.value.toLowerCase();
+
+    cards.forEach(card => {
+      const nome = card.querySelector('.nome-animal').textContent.toLowerCase();
+      const corresponde = nome.includes(valor);
+      card.style.display = corresponde ? 'inline-block' : 'none';
+    });
+  });
+</script>
+</html>
